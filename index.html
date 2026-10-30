@@ -237,6 +237,16 @@ async function removeStock(){
  }catch(e){alert(e.message)}
 }
 function copyCode(){if(navigator.clipboard){navigator.clipboard.writeText(farmInfo.code).then(()=>alert("Plaas-kode gekopieer: "+farmInfo.code)).catch(()=>alert("Plaas-kode: "+farmInfo.code))}else alert("Plaas-kode: "+farmInfo.code)}
+window.login = login;
+window.register = register;
+window.logout = logout;
+window.createFarm = createFarm;
+window.joinFarm = joinFarm;
+window.tab = tab;
+window.production = production;
+window.moveStock = moveStock;
+window.removeStock = removeStock;
+window.copyCode = copyCode;
 </script>
 </body>
 </html>
